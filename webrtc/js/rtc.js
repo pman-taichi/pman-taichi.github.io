@@ -105,7 +105,9 @@
         //var li = $('<li>[' +  now + '] '+ message + '</li>');
         var li = $('<li>'+ message + '</li>');
         if(mine){
-            li.css('color','green');
+            li.addClass('green');
+        }else{
+            li.addClass('red');
         }
         $chat.append(li);
     };
